@@ -1,10 +1,7 @@
 <template>
-  <h2>登入頁面</h2>
-  <div class="container">
+  <div class="container my-4">
+    <h2>登入頁面</h2>
     <div class="row justify-content-center">
-      <h1 class="h3 mb-3 font-weight-normal">
-        請先登入
-      </h1>
       <div class="col-8">
         <form id="form" class="form-signin" @submit.prevent="login">
           <div class="form-floating mb-3">
@@ -23,9 +20,6 @@
         </form>
       </div>
     </div>
-    <p class="mt-5 mb-3 text-muted">
-      &copy; 2021~∞ - 六角學院
-    </p>
   </div>
 </template>
 

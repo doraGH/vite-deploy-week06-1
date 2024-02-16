@@ -1,7 +1,7 @@
 <template>
   <VueLoading :active="isLoading" />
-  <h2>前台產品列表</h2>
-  <div class="container">
+  <div class="container my-4">
+    <h2>前台產品列表</h2>
     <div class="mt-4">
       <div class="row row-cols-5 my-4 g-4">
         <div class="col" v-for="item in products" :key="item.id">

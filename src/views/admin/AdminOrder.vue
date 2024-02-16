@@ -1,8 +1,8 @@
 <template>
   <VueLoading :active="isLoading" />
-  <h2>訂單列表</h2>
   <div class="container">
-    <div class="mt-4">
+    <div class="d-flex justify-content-between mt-4">
+      <h2>訂單列表</h2>
       <div class="text-end">
       <button class="btn btn-outline-danger" type="button">清空訂單</button>
       </div>

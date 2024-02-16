@@ -1,14 +1,14 @@
 <template>
-  <div class="home">
-    <VueLoading :active="isLoading" />
-    <h1>Hello, This is Home Page.</h1>
-    <hr>
-    <!-- <HelloWorld /> -->
+  <div class="container my-4">
+    <div class="home">
+      <VueLoading :active="isLoading" />
+      <h1>Hello, This is Home Page.</h1>
+      <hr>
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   data() {
@@ -21,11 +21,5 @@ export default {
       this.isLoading = false;
     }, 1000);
   },
-  // components: {
-  //   HelloWorld,
-  // },
 };
 </script>
-
-<style scoped>
-</style>

@@ -1,13 +1,10 @@
 <template>
   <VueLoading :active="isLoading" />
-  <h2>後台產品列表</h2>
   <div class="container">
-    <div class="text-end mt-4">
+    <div class="d-flex justify-content-between mt-4">
+      <h2>後台產品列表</h2>
       <button class="btn btn-primary" @click="openProductModal('createNew')">
         建立新的產品
-      </button>
-      <button type="button" class="btn btn-outline-primary m-2" @click="logout">
-        登出
       </button>
     </div>
     <table class="table mt-4">
@@ -165,17 +162,6 @@ export default {
     },
     openDelProductModalShow() {
       this.$refs.delProductModal.openModal();
-    },
-
-    // 登出
-    logout() {
-      axios.post(`${VITE_URL}/logout`)
-        .then(() => {
-          this.$router.push('/login');
-        })
-        .catch((error) => {
-          Swal.fire(error.response.statusText);
-        });
     },
   },
 };

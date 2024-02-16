@@ -9,7 +9,7 @@ import eslintPlugin from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vite-deploy-week06/',
+  base: '/vite-deploy-week06-1/',
   plugins: [
     vue(),
     eslintPlugin({
